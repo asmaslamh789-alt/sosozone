@@ -123,6 +123,20 @@ if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
   </style>
+  <style>
+    @media (max-width:768px){
+      * {max-width:100% !important; box-sizing: border-box !important;}
+      body { overflow-x: hidden !important;}
+      header, nav ,div { flex-wrap:wrap !important;}
+      h1 { font-size: 28px !important; line-height: 1.3 !important; text-align: center !important}
+      h2 { font-size: 22px !important; text-align: center !important;}
+      p{ font-size: 15px !important;}
+      img { height: auto !important;}
+    }
+
+  </style>
+
+
 </head>
 <body class="bg-surface-canvas text-ink-primary font-body min-h-[1024px] antialiased" data-stitch-vh="min-h-[1024px]===min-h-screen">
   <div id="app" class="min-h-[1024px] flex flex-col" data-stitch-vh="min-h-[1024px]===min-h-screen">
